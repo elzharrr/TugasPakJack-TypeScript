@@ -17,11 +17,19 @@
  * 3. Display the product data using console.log.
  */
 
-type product = {
+type cart = {
     procode: string,
-    proname: string
+    proname: string,
     price: number,
     quantity: number,
     freeongkir: boolean
 }
 
+const shop : cart[] = [
+    {procode: "KB001", proname: "Mechanical Keyboard", price: 850000, quantity: 1, freeongkir: true},
+    {procode: "MS002", proname: "Wireless Mouse", price: 275000, quantity: 2, freeongkir: true},
+    {procode: "HD003", proname: "External SSD 1TB", price: 1650000, quantity: 1, freeongkir: false},
+    {procode: "HP004", proname: "Gaming Headset", price: 720000, quantity: 1, freeongkir: true}
+]
+
+console.log(shop)
