@@ -9,3 +9,38 @@
  * 
  * display the student data using console.log.
  */
+
+type TelkomStudent = {
+    StudentID: string,
+    StudentName : string,
+    Age: number,
+    StudentStatus: string
+}
+
+const student ={
+    StudentID : "TS9247",
+    StudentName : "Praba",
+    Age: 16,
+    StudentStatus: "Acticve"
+}
+
+const student1 = {
+        StudentID : "TS19827",
+    StudentName : "Akhdan",
+    Age: 15,
+    StudentStatus: "Acticve"
+}
+
+const student2 = {
+        StudentID : "TS9752",
+    StudentName : "Dulpan",
+    Age: 17,
+    StudentStatus: "Deacticve"
+}
+
+//console.log(student,student1,student2)//
+
+const student3 = [student, student1, student2]
+student3.forEach(student3 => {
+    console.log(student3)
+});

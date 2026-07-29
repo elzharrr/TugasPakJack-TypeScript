@@ -14,3 +14,15 @@
  * 4. Declare all variables in TypeScript.
  * 5. Display the product data using console.log.
  */
+
+const Shop = {
+    Productname:  "Mechanical RGB Keyboard",
+    ProductCode: "KBR-001",
+    Price: 850000,
+    discount: 0.25,
+    Jumlah: 2,
+    Premium: true,
+    Stock: "Available"
+}
+
+console.log(Shop)

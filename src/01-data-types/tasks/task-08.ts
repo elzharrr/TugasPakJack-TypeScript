@@ -9,7 +9,7 @@
 | 08:00 | 24.5             |
 | 09:00 | 25.1             |
 | 10:00 | 26.8             |
-| 11:00 | 28.4             |
+| 11:00 | 28.4             |    
 | 12:00 | 30.2             |
 | 13:00 | 31.1             |
 | 14:00 | 30.7             |
@@ -21,3 +21,13 @@
  * 2. Store the temperature data in a single collection.
  * 3. Display the temperature data using console.log.
  */
+
+type temperaturerecord = {
+    time : string,
+    temp : number
+}
+
+const record= { 
+ {time1 : "08.00", temp2 : 24.5,}
+}
+
