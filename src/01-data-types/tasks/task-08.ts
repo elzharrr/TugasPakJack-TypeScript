@@ -22,12 +22,20 @@
  * 3. Display the temperature data using console.log.
  */
 
-type temperaturerecord = {
-    time : string,
-    temp : number
-}
+type TemperatureReading = {
+  time: string;
+  temp: number;
+};
 
-const record= { 
- {time1 : "08.00", temp2 : 24.5,}
-}
+const Temperatures: TemperatureReading[] = [
+  { time: "08:00", temp : 24.5 },
+  { time: "09:00", temp : 25.1 },
+  { time: "10:00", temp : 26.8 },
+  { time: "11:00", temp : 28.4 },
+  { time: "12:00", temp : 30.2 },
+  { time: "13:00", temp : 31.1 },
+  { time: "14:00", temp : 30.7 },
+  { time: "15:00", temp: 29.3 }
+];
 
+console.log(Temperatures);
