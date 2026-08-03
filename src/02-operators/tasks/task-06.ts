@@ -13,3 +13,24 @@
  * - Discount amount
  * - Final payment
  */
+
+const playhours = 7;
+const minutplay = 35;
+const hourprice = 8000;
+
+const totalminut = (playhours * 60) + minutplay;
+const sisaminut = totalminut % 60;
+
+const renthour = sisaminut > 0 ? playhours + 1 : playhours;
+const rentprice = renthour * hourprice; 
+const discountAmount = renthour > 5 ? (rentprice * 0.15) : 0;
+
+const finalprice = rentprice - discountAmount;
+
+
+console.log(`Total minut play : ${totalminut} menit`);
+console.log(`minut remain : ${sisaminut} menit`);
+console.log(`rent hour : ${renthour} jam`);
+console.log(`before disc : Rp${rentprice}`);
+console.log(`discount (15%) : Rp${discountAmount}`);
+console.log(`final price payment : Rp${finalprice}`);

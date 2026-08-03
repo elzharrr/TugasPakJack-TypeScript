@@ -14,3 +14,12 @@
  * Task: Store and display the result in a variable named "isEligible"
 
  */
+
+const finalscore = 82
+const attendance = 94
+const tuition = true
+
+const eligible = finalscore >= 75 && attendance >= 90 && tuition;
+
+console.log(eligible + " or Yess")
+console.log("The Student can participate in the graduation Ceremon")

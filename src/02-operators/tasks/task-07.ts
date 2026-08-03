@@ -21,3 +21,26 @@
  * - Final payment
  * - Whether the guest is eligible for free breakfast
  */
+
+const roomnight = 650000
+const nightstay = 4
+const serviceprice = 120000
+const tax = 11/100
+const vip = true 
+const vipcut = 12/100
+
+const oriprice = roomnight * nightstay
+let disc : number = 0
+if(vip){
+    disc = oriprice * vipcut;
+}
+const discroom = oriprice - disc
+const taxroom = discroom * tax
+const finalprice = taxroom + serviceprice
+
+const hasFreeBreakfast = nightstay >= 3 || vip;
+
+
+console.log("Room full price: "+finalprice)
+console.log("Free Breakfast: "+ (hasFreeBreakfast ? "Yes" : "No"))
+

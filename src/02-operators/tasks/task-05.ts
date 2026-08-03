@@ -33,3 +33,34 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+import { log } from "node:console"
+
+const stname = "Alya Putri"
+const gpa = 3.89
+const famincome =  4200000
+const comp=  4
+const disiplin =false
+const doccomplete =  true
+
+const Agpa = gpa >= 3.75
+const Afamincome = famincome < 5000000
+const Acomp = comp >= 3
+const Adisiplin = disiplin === false
+const Adoccomplete = doccomplete === true
+
+const schship = Agpa &&
+                Afamincome &&
+                Adoccomplete &&
+                Adisiplin &&
+                Acomp;
+
+const schshicut = schship ? 12000000 : 0
+const schshipbugdet = 500000000
+const remainbugdet = schshipbugdet - schshicut
+
+console.log("Stundent Name: "+stname)
+console.log(`Status : ${schship ? "Yes" : "No"}`)
+console.log("Scholar Ship : "+ schshicut)
+console.log("Total Budget: "+schshipbugdet)
+console.log("Remaining Budget: "+ remainbugdet)

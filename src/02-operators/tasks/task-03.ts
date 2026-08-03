@@ -17,3 +17,15 @@
  * - Bonus
  * - Final salary
  */
+
+const salary = 5000000;
+const overhours = 12;
+const overrate = 50000;
+
+const overpay = overhours * overrate;
+const bonus = overhours > 10 ? 300000 : 0 /* (?) melambangkan pengondisian */
+const finalpay = salary + overpay + bonus
+
+console.log("Overtime Pay: " + overpay)
+console.log("Bonus: " + bonus)
+console.log("Final Salary: " + finalpay)
