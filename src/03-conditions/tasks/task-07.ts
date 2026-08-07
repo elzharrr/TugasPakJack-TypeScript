@@ -30,3 +30,20 @@
  * 2. Implement both screening stages.
  * 3. Display the loan decision.
  */
+
+const name = "Andi Wijaya"
+const moncome = 10000000
+const score = 725
+const debt = 2500000
+const permanentemploy = true
+
+const firstscreening = moncome > 8000000 && score >= 700 
+
+const maxdebt = moncome * 30/100
+const secondscreening = (debt <= maxdebt) && permanentemploy;
+
+if(firstscreening && secondscreening) {
+    console.log(name + " Your Loan Accept")
+} else {
+    console.log(name + " Loan Rejected")
+}

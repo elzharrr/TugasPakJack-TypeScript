@@ -14,3 +14,12 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+
+const emname = "Dimas Pratama"
+const score = 78
+
+if(score >= 80) {
+    console.log("Bonus Approved for "+ emname)
+} else {
+    console.log("Bonus not approved for "+ emname)
+}

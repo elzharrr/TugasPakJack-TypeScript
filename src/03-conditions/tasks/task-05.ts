@@ -32,3 +32,22 @@
  *  - Implement the second screening only if the first screening is passed.
  *  - Display the correct result.
  */
+
+const name = "Fajar Hidayat"
+const GPA = 3.86
+const Famincom = 4200000
+const compcount = 4
+const disciplin = false
+const docomplet = true
+
+const firstscreening= (GPA >= 3.75) && (Famincom < 5000000)
+if(firstscreening) {
+    const secondscreening = (compcount > 3 ) && (disciplin) && (docomplet)
+if(secondscreening){
+    console.log("Scholarship Approved")
+    } else {
+         console.log("Passed First Screening, but Failed Second Screening")
+    } 
+} else {
+    console.log("Failed First Screening")
+}

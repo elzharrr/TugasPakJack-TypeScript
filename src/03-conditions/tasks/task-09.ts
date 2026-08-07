@@ -36,3 +36,23 @@ Student Tasks
 - Translate every business rule into conditional statements.
 - Display the final machine status.
  */
+
+const poweron = true
+const temp = 95
+const highvibration = false
+const prodspeed = 92
+
+if (poweron){
+} else {
+    console.log("Machine Off")
+}
+if(highvibration){
+    console.log("Emergency Shutdown for manchine" )
+} else {}
+if (temp > 90){
+    console.log("Cooling Required before working again")
+}else if (prodspeed < 80 ){
+    console.log("Performance Warning need to reset")
+} else {
+    console.log("Machine Operating Normally")
+}
